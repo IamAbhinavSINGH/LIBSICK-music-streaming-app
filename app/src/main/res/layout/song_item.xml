@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginTop="10dp"
+    android:orientation="horizontal">
+
+    <com.makeramen.roundedimageview.RoundedImageView
+        android:id="@+id/song_image"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        app:riv_corner_radius_bottom_left="25dp"
+        app:riv_corner_radius_bottom_right="25dp"
+        app:riv_corner_radius_top_left="25dp"
+        android:scaleType="centerCrop"
+        app:riv_corner_radius_top_right="25dp"
+        android:src="@mipmap/ic_launcher"
+        android:layout_marginStart="10dp"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/song_name"
+        android:text="TEST WORD"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="8dp"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:includeFontPadding="true"
+        android:textColor="#FF300B4D"
+        />
+
+
+
+</LinearLayout>

@@ -1,0 +1,16 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.LIBSICK" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/white</item>
+        <item name="colorPrimaryDark">@color/purple_700</item>
+        <item name="colorAccent">#81256D</item>
+        <!-- Customize your theme here. -->
+    </style>
+
+    <style name="mytheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">#FFB456FE</item>
+        <item name="colorPrimaryDark">#FFFFFF</item>
+        <item name="colorAccent">#FF300B4D</item>
+    </style>
+</resources>
