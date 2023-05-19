@@ -1,6 +1,5 @@
 <resources>
     <string name="app_name">Libsick V0.0</string>
-    <!-- TODO: Remove or change this placeholder text -->
     <string name="song_name">SONG NAME</string>
     <string name="artist_name">Artist Name</string>
     <string name="_4_60">4:60</string>
