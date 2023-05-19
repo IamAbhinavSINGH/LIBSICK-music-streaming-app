@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name = "Background_Dark">#FF131C23</color>
+    <color name = "Gradient_Dark">#FF19282F</color>
+    <color name = "Primary_Text">#FFA9B2B9</color>
+    <color name = "Secondary_Text">#404C53</color>
+    <color name = "cool_Blue">#FF2B93B8</color>
+</resources>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="150dp"
+    android:id="@+id/cardViewforAlbum"
+    android:layout_height="190dp"
+    app:cardElevation="5dp"
+    app:cardBackgroundColor="@color/Gradient_Dark"
+    android:layout_marginTop="10dp"
+    android:layout_marginBottom="10dp"
+    android:layout_marginStart="20dp"
+    app:cardCornerRadius="15dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        tools:ignore="UseCompoundDrawables">
+
+        <com.makeramen.roundedimageview.RoundedImageView
+            android:id="@+id/imageViewForAlbumItem"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:src="@mipmap/ic_launcher"
+            app:riv_corner_radius="15dp"
+            android:contentDescription="@string/imageviewforAlbumItem" />
+        <TextView
+            android:id="@+id/textViewforAlbumItem"
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:textSize="14sp"
+            android:layout_margin = "10dp"
+            android:textColor="@color/Primary_Text"
+            android:text="@string/album_name"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:singleLine="true"
+            />
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,254 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/Background_Dark"
+    android:orientation="vertical"
+    tools:context=".playerActivity">
+
+
+    <RelativeLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:layout_marginTop="10dp"
+           android:orientation="horizontal">
+
+           <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+               android:id="@+id/backForPlayerActivity"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+              app:icon="@drawable/ic_baseline_keyboard_arrow_down_24"
+               app:backgroundTint="@android:color/transparent"
+               android:layout_marginStart="20dp"
+               app:iconSize="40dp"
+               app:elevation="0dp"
+               app:iconTint="@android:color/white"
+               android:outlineAmbientShadowColor="@android:color/transparent"
+               android:outlineSpotShadowColor="@android:color/transparent"
+               tools:targetApi="p" />
+
+
+           <TextView
+               android:id="@+id/SongNameforPlayerActivity"
+               android:layout_width="200dp"
+               android:layout_height="wrap_content"
+               android:text="@string/song_name"
+               android:singleLine="true"
+               android:gravity="center"
+               android:textStyle="bold"
+               android:layout_centerHorizontal="true"
+               android:textSize="16sp"
+               android:layout_marginTop="10dp"
+               android:textColor="@color/white"
+               android:layout_marginStart="20dp"/>
+
+           <TextView
+               android:id="@+id/artistNameforPlayerActivity"
+               android:layout_width="200dp"
+               android:layout_height="wrap_content"
+               android:text="@string/artist_name"
+               android:singleLine="true"
+               android:textStyle="normal"
+               android:textSize="14sp"
+               android:layout_centerHorizontal="true"
+               android:gravity="center"
+               android:layout_below="@+id/SongNameforPlayerActivity"
+               android:textColor="@color/Primary_Text"
+               android:layout_marginStart="20dp"
+               android:layout_marginTop="5dp"/>
+
+        <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+            android:id="@+id/options"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:icon="@drawable/options_player_activity"
+            app:iconTint="@color/white"
+            app:backgroundTint="@android:color/transparent"
+            android:outlineSpotShadowColor="@android:color/transparent"
+            android:outlineAmbientShadowColor="@android:color/transparent"
+            app:iconSize="30dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="20dp"/>
+
+       </RelativeLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:orientation="vertical">
+
+        <com.makeramen.roundedimageview.RoundedImageView
+            android:id="@+id/albumArtforPlayerActivity"
+            android:layout_width="match_parent"
+            android:layout_height="375dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginEnd="30dp"
+            android:scaleType="centerCrop"
+            app:riv_corner_radius="40dp"
+            android:src="@drawable/creepin"/>
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="30dp"
+        android:orientation="vertical">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="20dp">
+
+            <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+                    android:id="@+id/favouriteForPlayerActivity"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginEnd="20dp"
+                    app:icon="@drawable/ic_baseline_favorite_border_24"
+                    app:backgroundTint="@android:color/transparent"
+                    app:iconTint="@color/white"
+                    android:outlineAmbientShadowColor="@android:color/transparent"
+                    android:outlineSpotShadowColor="@android:color/transparent"
+                    app:iconSize="30dp"
+                    tools:targetApi="p" />
+
+            <SeekBar
+                    android:id="@+id/seekBarforPlayerActivity"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/favouriteForPlayerActivity"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginEnd="20dp"
+                    android:layout_centerInParent="true"
+                    android:progress="30"
+                    android:progressTint="@color/white"
+                    android:thumbTint="@color/cool_Blue"
+
+                    />
+
+            <TextView
+                    android:id="@+id/currentDuration"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="00:00"
+                    android:textSize="14sp"
+                    android:layout_below="@id/seekBarforPlayerActivity"
+                    android:textColor="@color/Primary_Text"
+                    android:textStyle="normal"
+                    android:layout_marginStart="30dp"
+                    />
+
+            <TextView
+                    android:id="@+id/totalDuration"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="30dp"
+                    android:layout_below="@+id/seekBarforPlayerActivity"
+                    android:text="00:00"
+                    android:textColor="@color/Primary_Text"
+                    android:layout_alignParentEnd="true"
+                    android:textSize="14sp" />
+
+            </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/relativelayoutforPauseButton"
+                android:layout_alignParentBottom="true">
+
+                <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+                    android:id="@+id/pausePlayforPlayerActivity"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_marginTop="10dp"
+                    app:backgroundTint="@color/white"
+                    app:icon="@drawable/ic_baseline_play_arrow_24"
+                    android:outlineSpotShadowColor="@android:color/transparent"
+                    android:outlineAmbientShadowColor="@android:color/transparent"
+                    app:iconSize="30dp"
+                    app:iconTint="@android:color/black"
+                    tools:ignore="UnusedAttribute" />
+
+                <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+                    android:id="@+id/previousBtnforPlayerActivity"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="20dp"
+                    android:layout_centerVertical="true"
+                    android:outlineAmbientShadowColor="@android:color/transparent"
+                    android:layout_toStartOf="@+id/pausePlayforPlayerActivity"
+                    android:outlineSpotShadowColor="@android:color/transparent"
+                    app:backgroundTint="@android:color/transparent"
+                    app:icon="@drawable/ic_baseline_skip_previous_24"
+                    app:iconSize="40dp"
+                    app:iconTint="@color/white"
+                    tools:targetApi="p" />
+
+                <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+                    android:id="@+id/nextBtnforPlayerActivity"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginEnd="20dp"
+                    android:layout_toEndOf="@+id/pausePlayforPlayerActivity"
+                    android:outlineSpotShadowColor="@android:color/transparent"
+                    android:outlineAmbientShadowColor="@android:color/transparent"
+                    app:backgroundTint="@android:color/transparent"
+                    app:icon="@drawable/ic_baseline_skip_next_24"
+                    app:iconSize="40dp"
+                    app:iconTint="@color/white"
+                    tools:ignore="UnusedAttribute" />
+
+                <ImageButton
+                    android:id="@+id/shuffleBtnforPlayerActivity"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@android:color/transparent"
+                    android:src="@drawable/ic_baseline_shuffle_24"
+                    app:tint="@color/white" />
+
+                <ImageButton
+                    android:id="@+id/loopforPlayerActivity"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="20dp"
+                    android:layout_centerVertical="true"
+                    android:background="@android:color/transparent"
+                    android:src="@drawable/ic_baseline_repeat_24"
+                    app:tint="@color/white" />
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+
+
+</LinearLayout>
+
